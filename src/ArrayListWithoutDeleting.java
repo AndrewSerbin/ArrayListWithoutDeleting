@@ -5,29 +5,26 @@ public class ArrayListWithoutDeleting<E> extends ArrayList<E> {
 
     @Override
     public E remove(int index) {
-	System.out.println("Can`t remove");
-	return null;
+	throw new UnsupportedOperationException();
     }
 
     @Override
     public boolean remove(Object o) {
-	System.out.println("Can`t remove");
-	return false;
+	throw new UnsupportedOperationException();
     }
 
     @Override
     public void clear() {
-	System.out.println("Can`t clear");
+	throw new UnsupportedOperationException();
     }
 
     @Override
     protected void removeRange(int fromIndex, int toIndex) {
-	System.out.println("Can`t remove");
+	throw new UnsupportedOperationException();
     }
 
     @Override
     public boolean removeAll(Collection<?> c) {
-	System.out.println("Can`t remove");
-	return false;
+	throw new UnsupportedOperationException();
     }
 }
